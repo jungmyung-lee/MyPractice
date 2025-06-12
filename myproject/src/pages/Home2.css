@@ -1,0 +1,119 @@
+.home2-container {
+  --padding-start: 0;
+  --padding-end: 0;
+  background-color: #f8f8f8;
+}
+
+.home2-header {
+  background-color: white;
+  padding: 12px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.home2-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.home2-banner {
+  background-color: #ff6600;
+  color: white;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.banner-icon {
+  font-size: 20px;
+}
+
+.card-section {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-row {
+  display: flex;
+  gap: 12px;
+  height: 136px; /* ✅ 필수: 버튼 높이 명시 */
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 16px 16px 8px;
+}
+
+.schedule-bar {
+  display: flex;
+  gap: 8px;
+  margin: 0 16px;
+}
+
+.day-box {
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.news-section {
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.news-placeholder {
+  background: white;
+  height: 100px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+.schedule-legend {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 8px 16px 0;
+}
+
+.legend-box {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+}
+
+.status-before {
+  background-color: #88c0d0;
+}
+
+.status-progress {
+  background-color: #f9c74f;
+  color: black;
+}
+
+.status-done {
+  background-color: #90be6d;
+}
+

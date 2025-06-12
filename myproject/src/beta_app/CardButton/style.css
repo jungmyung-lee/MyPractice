@@ -1,0 +1,19 @@
+.card-button {
+    transition: 0.2s ease, box-shadow 0.2s ease;
+    touch-action:auto;
+}
+
+.card-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-button-orange {
+    background-color: #FF6F1E;
+    color: white;
+}
+
+.card-button-white {
+    background-color: white;
+    color: black;
+}

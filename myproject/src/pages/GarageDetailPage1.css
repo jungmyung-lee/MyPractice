@@ -1,0 +1,111 @@
+/* GarageDetailPage.css */
+
+.garage-detail-content {
+    padding: 16px;
+    background-color: #f8f8f8;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+  
+  .header {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+  
+  .back-button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .tags {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+  }
+  
+  .rating {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #222;
+  }
+  
+  .star {
+    color: orange;
+    font-size: 16px;
+  }
+  
+  .tab-bar {
+    display: flex;
+    gap: 4px;
+    margin: 16px 0;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 8px;
+    background: #eee;
+    border-radius: 4px;
+    font-size: 14px;
+    border: none;
+  }
+  
+  .tab.active {
+    background: #ff6b00;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .info-card {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* GarageDetailPage1.css */
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.5;
+}
+  
+.icon {
+  margin-right: 8px;
+  font-size: 18px;
+  min-width: 24px;
+}
+  
+.garage-image {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+  .empty-tab {
+    text-align: center;
+    color: #999;
+    padding: 40px 0;
+    font-size: 16px;
+  }

@@ -1,0 +1,8 @@
+.content .subtitle {
+  color: black;
+  font-family: 'Noto Sans KR';
+  font-weight: 500;
+  word-wrap: break-word;
+  white-space: pre-line;
+  font-size: 16px;
+}

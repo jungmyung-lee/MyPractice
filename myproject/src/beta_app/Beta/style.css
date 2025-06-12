@@ -1,0 +1,31 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px; /* 제목, 내용, 아이콘 사이 간격 */
+  width: 100%;
+  height: 100%;
+}
+
+.frame .text-wrapper {
+  color: #000000;
+  font-family: "Noto Sans KR-Bold", Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.3;
+  text-align: center;
+  white-space: pre-line; /* <-- 핵심: \n 줄바꿈 처리 */
+}
+
+.frame .div {
+  color: #000000;
+  font-family: "Noto Sans KR-Medium", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: center;
+  white-space: pre-line; /* <-- 핵심: \n 줄바꿈 처리 */
+}

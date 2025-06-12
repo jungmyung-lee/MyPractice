@@ -1,0 +1,9 @@
+.splash-content {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+  
+  .splash-content.fade-out {
+    opacity: 0;
+  }
+  

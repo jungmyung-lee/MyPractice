@@ -1,0 +1,14 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+    --ion-color-primary: #FF6F1E;
+    --ion-background-color: #F5F5F5;
+    --ion-font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ion-toast {
+    --background: white;
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: black;
+}

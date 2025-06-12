@@ -1,0 +1,32 @@
+.location-div {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 14px;
+    color: #454A4D;
+    font-weight: 400;
+    line-height: normal;
+    gap: 11px;
+}
+
+.location-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 6px;
+    color: #454A4D;
+    
+}
+
+.location-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    gap: 4px;
+    cursor: pointer;
+    color: #454A4D;
+}

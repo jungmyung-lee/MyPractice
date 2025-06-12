@@ -1,0 +1,136 @@
+.garage-container {
+  padding: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  background: #f5f6f7;
+}
+
+.garage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.garage-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.location-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.location-input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: white;
+  font-size: 14px;
+}
+
+.current-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.map-box {
+  margin-top: 16px;
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  background-color: #dcdcdc;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.sort-btn,
+.filter-btn {
+  cursor: pointer;
+}
+
+.garage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.garage-card {
+  background: white;
+  border-radius: 12px;
+}
+
+.garage-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.garage-thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-left: 12px;
+}
+
+.confirm-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+/* 추가된 반짝이는 효과 */
+.garage-card.highlight-glow {
+  box-shadow: 0 0 12px 4px rgba(0, 122, 255, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+@keyframes flash-click {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: #d4d4d4;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.garage-card.flash-on-click {
+  animation: flash-click 0.4s ease-in-out;
+}
+
+ion-modal#garage-modal {
+  --height: 60%;
+  --border-radius: 16px;
+  --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+ion-modal#garage-modal::part(backdrop) {
+  background: rgba(209, 213, 219);
+  opacity: 1;
+}
+
+ion-modal#garage-modal ion-toolbar {
+  --background: #454A4D;
+  --color: white;
+}

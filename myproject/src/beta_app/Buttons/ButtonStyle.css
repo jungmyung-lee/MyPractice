@@ -1,0 +1,59 @@
+.custom-button {
+  width: 100%;
+  font-size: 22px; 
+  font-weight: bold;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: "Noto Sans KR", sans-serif;
+  border: none;
+  cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 95px;
+  transition: 0.2s ease, box-shadow 0.2s ease;
+  touch-action:auto;
+}
+.custom-button:active {
+  filter: brightness(0.9);
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  
+}
+.orange {
+    background-color: #ff6f1e;
+    color: white;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.gray {
+  background-color: #7A7D7F;
+  color: white;
+}
+
+.svg-inline-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.svg-inline-button svg {
+  transition: fill 0.3s ease;
+}
+
+
+.arrow {
+  transition: width 1s ease, opacity 0.2s ease,transform 0.2s ease;
+  }
+  
+.arrow.open {
+  transform: rotate(180deg);
+  width: 0;
+  opacity: 0;
+}
+
+

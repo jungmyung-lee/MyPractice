@@ -1,0 +1,38 @@
+body, html {
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #F5F5F5;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+    padding: 0px 16px 8px;
+}
+
+.tab-container {
+    display: flex;
+    flex-direction: column;
+    height: 97%;
+}
+
+.header {
+    padding: 0px 0px 8px 0px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+

@@ -1,0 +1,44 @@
+.approval-success-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.approval-success-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+}
+
+.approval-success-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.approval-success-content .title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.approval-success-content .subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.approval-success-footer {
+  margin-bottom: 32px;
+}

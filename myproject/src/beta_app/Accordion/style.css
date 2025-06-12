@@ -1,0 +1,55 @@
+.accordion {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .accordion-header {
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: none;
+    padding: 21px 16px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out; 
+  }
+
+  .accordion-header.open {
+    background-color: #454A4D;
+    color: white;
+  }
+  
+  
+  .accordion-content {
+    width: 100%;
+    display: block;
+    border: none;
+    max-height: 0;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+    padding: 0px 16px;
+    transition: max-height 0.2s ease-out, padding 0.2s ease-out, background-color 0.2s ease-out, color 0.2s ease-out;
+  }
+  
+  .accordion-content.show {
+    background-color: #454A4D;
+    color: white;
+    max-height: 500px; /* 충분히 큰 값 */
+    padding: 21px 16px;
+  }
+  
+  .arrow {
+    transition: transform 0.2s ease;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  

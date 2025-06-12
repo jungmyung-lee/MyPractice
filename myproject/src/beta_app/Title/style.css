@@ -1,0 +1,15 @@
+.title {
+    color: black;
+      font-family: 'Noto Sans KR';
+      font-weight: 700;
+      word-wrap: break-word;
+      white-space: pre-line;
+  }
+  
+  .title-large {
+      font-size: 28px;
+  }
+  
+  .title-medium {
+      font-size: 24px;
+  }

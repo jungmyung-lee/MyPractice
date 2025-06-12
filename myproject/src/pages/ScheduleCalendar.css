@@ -1,0 +1,251 @@
+/* 전체 페이지 */
+.schedule-page {
+  background-color: #f9f9f9;
+  padding: 16px;
+}
+
+.header-button-container {
+    width: 100%;
+    height: 64px;
+    display : flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.calendar-top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* 연도/월 선택기 */
+.calendar-month-selector {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* 캘린더 그리드 */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+}
+
+/* 날짜 셀 */
+.calendar-cell {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 3px;
+  font-size: 12px;
+  position: relative;
+  /*aspect-ratio: 1/1;*/
+  height: 60px;  /*✅ 셀 높이 고정 */
+  overflow: hidden; /* ✅ 내용 넘치면 자름 */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 날짜 숫자 */
+.calendar-day-number {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.calendar-cell .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #7A7D7F;
+  border-radius: 1px;
+}
+
+/* 오늘 날짜 강조 */
+.today {
+  border: 2px solid #ff6f1e;
+}
+
+/* 선택된 날짜 배경 및 점 */
+.calendar-cell.selected {
+  background-color: #eee;
+}
+.calendar-cell.selected::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 일정 아이템 (캘린더 셀 안) */
+.schedule-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  width: 100%;
+  margin-top: 3px;
+}
+.schedule-item {
+  width: 90%;
+  height: 5px;
+  border-radius: 4px;
+  color: white;
+}
+/*라벨 */
+.status-legend {
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.status-label {
+  text-align: center;
+  font-size: 8px;
+  line-height: normal;
+  font-weight: 550;
+  padding: 1px 6px 1px 7px;
+  border-radius: 4px;
+  color: black;
+}
+.status-before {
+  background-color: #A8E6CF;
+}
+.status-progress {
+  background-color: #FFF6A3;
+}
+.status-done {
+  background-color: #AED7F1;
+}
+
+
+/* 일정 상세 (타임라인 스타일) */
+.day-schedule-section {
+  border-radius: 8px 8px 0px 0px;
+  background: #ECECEC;
+  flex-shrink: 0;
+  margin-top: 2px;
+  padding: 8px;
+  position: relative;
+}
+.timeline-header {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-direction: row;
+  padding: 7px;
+  align-items: center;
+  gap: 7px;
+}
+.timeline-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.vertical-line {
+  position: absolute;
+  width: 1px;
+  flex-grow: 1;
+  background-color: black;
+  top: 48px;
+  left: 22px;
+  bottom: 0px;
+  border-radius: 1px;
+  z-index: 0;
+}
+.card-body {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+}
+.card-body p {
+  margin: 4px 0;
+}
+
+
+.add-schedule-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-close {
+  background: none;
+  border: none;
+  color: #888;
+  font-weight: bold;
+  font-size: 14px;
+}
+.time-row {
+  display: flex;
+  gap: 8px;
+}
+.color-selector {
+  display: flex;
+  gap: 8px;
+}
+.color-box {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.color-box:hover {
+  border: 2px solid #666;
+}
+.bg-before { background-color: #88c0d0; }
+.bg-progress { background-color: #f9c74f; }
+.bg-done { background-color: #90be6d; }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); /* 반투명 배경 */
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

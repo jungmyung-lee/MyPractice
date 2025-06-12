@@ -1,0 +1,65 @@
+.vehicle-detail-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  min-height: 100vh;
+}
+
+.vehicle-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.vehicle-title-box {
+  flex-grow: 1;
+}
+
+.vehicle-title-box .plate {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.vehicle-title-box .desc {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.header-image {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.tab-bar {
+  display: flex;
+  background-color: #eee;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.tab-button.active {
+  background-color: #fff;
+  font-weight: bold;
+  color: #000;
+}
+
+.tab-content {
+  background-color: #fff;
+  border-radius: 0 0 12px 12px;
+  min-height: 200px;
+  padding: 16px;
+}

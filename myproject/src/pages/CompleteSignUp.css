@@ -1,0 +1,74 @@
+.complete-container {
+    padding: 24px;
+    font-family: "Noto Sans KR", sans-serif;
+    background: #f5f6f7;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .close-button {
+    font-size: 28px;
+    cursor: pointer;
+    margin-bottom: 32px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 8px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 24px;
+  }
+  
+  .machine-preview {
+    background: white;
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .machine-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .machine-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .primary-button {
+    width: 100%;
+    padding: 14px;
+    background-color: #ff6b00;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+  
+  .secondary-button {
+    width: 100%;
+    padding: 14px;
+    background: none;
+    color: #777;
+    font-size: 15px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+  }
+  

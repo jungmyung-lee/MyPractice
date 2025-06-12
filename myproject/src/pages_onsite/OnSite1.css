@@ -1,0 +1,28 @@
+.step1-container { display: flex; flex-direction: column; height: 100%; padding: 24px 16px; background-color: #f9f9f9; font-family: 'Noto Sans KR', sans-serif; }
+
+.header { margin-bottom: 16px; }
+
+.step-indicator { font-size: 20px; font-weight: 700; }
+
+.subtext { font-size: 16px; color: #6a6a6a; margin-top: 4px; }
+
+.machine-list { display: flex; flex-direction: column; gap: 16px; flex-grow: 1; overflow-y: auto; }
+
+.machine-item { display: flex; align-items: center; background-color: white; border-radius: 12px; padding: 12px; box-shadow: 0 0 0 1px #e0e0e0; position: relative; cursor: pointer; transition: box-shadow 0.2s; }
+
+.machine-item:hover { box-shadow: 0 0 0 2px #ff9e1b; }
+
+.machine-image { width: 72px; height: 72px; border-radius: 8px; object-fit: cover; margin-right: 12px; }
+
+.machine-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+
+.plate { font-weight: 700; font-size: 16px; }
+
+.name { font-size: 14px; color: #555; }
+
+.check-icon { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 20px; color: #ff9e1b; font-weight: bold; }
+
+.add-machine { height: 88px; border-radius: 12px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; background-color: white; font-size: 32px; color: #ccc; cursor: pointer; }
+
+.next-button { width: 100%; padding: 16px 0; background-color: #888; color: white; border: none; border-radius: 12px; font-size: 16px; font-weight: bold; margin-top: 24px; }
+

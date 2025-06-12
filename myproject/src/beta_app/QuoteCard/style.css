@@ -1,0 +1,72 @@
+.quote-card-button {
+    transition: 0.2s ease, box-shadow 0.2s ease;
+    touch-action:auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 8px;
+    border-radius: 12px;
+    background: #FFF;
+
+}
+
+.quote-card-button .text-container {
+    width: 70%;
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    --font-scale: 0px;
+    --ws: nowrap;
+    --of: hidden;
+    --toe: ellipsis;
+}
+
+.quote-card-button .text-container.show {
+    line-height: 110%;
+    
+    --font-scale: 2px;
+    --ws: normal;
+    --of: visible;
+    --toe: unset;
+}
+
+.text-container .medium {
+    font-size: calc(14px + var(--font-scale));
+    white-space: var(--ws);
+    overflow: var(--of);
+    text-overflow: var(--toe);
+}
+
+.text-container .small {
+    font-size: calc(10px + var(--font-scale));
+    white-space: var(--ws);
+    overflow: var(--of);
+    text-overflow: var(--toe);
+}
+
+.quote-card-button .img-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: zoom-in;
+    z-index: 3;
+}
+.quote-card-button .img-box.show {
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+}
+
+.quote-card-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.quote-card-button.show {
+    max-height: 500px; /* 충분히 큰 값 */
+    padding: 12px;
+}
+
